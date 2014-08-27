@@ -1,0 +1,44 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+    <title>Bandstock</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+
+    <!-- Browser Meta Information -->
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- IO -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- App -->
+    <script data-main="config" src="/lib/require.js"></script>
+
+    <style>
+        body 		{ padding-top:80px; }
+    </style>
+</head>
+<body style="background:black">
+<div class="container"  style="background:black">
+
+    <img src="../images/BSlogo.png" />
+    <div class="jumbotron text-center">
+        <h1><span class="fa fa-lock"></span> Join Bandstock for Free</h1>
+
+
+        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Sign In</a>
+        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Register</a>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a>
+        <a href="/auth/twitter" class="btn btn-info"><span class="fa fa-twitter"></span> Twitter</a>
+        <a href="/auth/google" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google</a>
+    </div>
+
+</div>
+</body>
+</html>

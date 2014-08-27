@@ -1,0 +1,39 @@
+img {max-width:100%}
+
+@media all and (max-width:1620px) { 
+	 #account-box label {font-size:34px}
+}
+/* Medium devices (screen-md) */
+@media all and (max-width:1200px) { 
+ #content-box {width:61%;}
+ #account-box input[type=text], #account-box input[type=email] {width:80%;max-width:870px}
+ #account-box .col input[type=text],#account-box .col input[type=email] {width:80%}
+ #account-box h2 {font-size:49px}
+ #account-box label {font-size:32px}
+ #account-box #go {width:60%;font-size:39px;line-height:108px}
+}
+
+@media all and (max-width:1024px) { 
+ #account-box h2 {font-size:28px}
+ #account-box label {font-size:22px}
+ #account-box input[type=text], #account-box input[type=email] {width:60%}
+}
+
+/* Small devices (screen-sm) */
+@media all and (max-width:992px){
+	#account-box h2 {font-size:25px}
+	#account-box label {font-size:13px}
+	#account-box input[type=text], #account-box input[type=email] {padding:15px}
+}
+
+/* extra - small devices (screen-xs) */
+@media all and (max-width: 760px) {
+	 #account-box .cols {padding:0 2%}
+}
+
+/* extra - small devices (screen-xxs) */
+@media all and (max-width: 480px) {
+	#account-box fieldset {height:auto;padding:30px 0}
+	 #account-box .col {width:100%;margin:0 0 20px!important;float:none!important;margin:0 auto}
+}
+
